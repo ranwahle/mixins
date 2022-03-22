@@ -1,0 +1,20 @@
+{
+  "name": "mixins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "class-generator.js",
+  "scripts": {
+    "start:simple-mixins": "tsc && node ./dist/simple-mixins.js",
+    "start:apply-mixins": "tsc && node ./dist/apply-mixins.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
