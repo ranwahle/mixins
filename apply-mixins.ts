@@ -25,17 +25,6 @@ class AShower {
   interface ToiletSeat extends ALivingRoom, AShower {}
   // Apply the mixins into the base class via
   // the JS at runtime
-  applyMixins(ToiletSeat, [AShower, ALivingRoom]);
-   
-  const myLivongRoom = new ToiletSeat();
-  myLivongRoom.playWithKids();
-  myLivongRoom.iDontWannaKnow();
-
-  const myShower = new ToiletSeat();
-  myShower.takeAShower();
-  myShower.iDontWannaKnow();
-   
-  // This can live anywhere in your codebase:
   function applyMixins(derivedCtor: any, constructors: any[]) {
     constructors.forEach((baseCtor) => {
       Object.getOwnPropertyNames(baseCtor.prototype).forEach((name) => {
@@ -47,5 +36,14 @@ class AShower {
         );
       });
     });
-  }
+  }   
+  const myLivongRoom = new ToiletSeat();
+  myLivongRoom.playWithKids();
+  myLivongRoom.iDontWannaKnow();
+
+  const myShower = new ToiletSeat();
+  myShower.takeAShower();
+  myShower.iDontWannaKnow();
+   
+  
   

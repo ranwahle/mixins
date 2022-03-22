@@ -2,10 +2,13 @@
   "name": "mixins",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "class-generator.js",
   "scripts": {
     "start:simple-mixins": "tsc && node ./dist/simple-mixins.js",
     "start:apply-mixins": "tsc && node ./dist/apply-mixins.js",
+    "start:mixin-with": "tsc && node ./dist/mixin-with.js",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

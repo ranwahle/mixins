@@ -9,9 +9,9 @@ function AddToiletSeat<TBase extends AClass>(Baseclass: TBase) {
 }
 
 class LivingRoom {
-    playWithKids() {}
+    playWithKids() { }
 
-    watchTv() {}
+    watchTv() { }
 
     eatDinner() {
 
@@ -19,15 +19,17 @@ class LivingRoom {
 }
 
 class Shower {
-    takeAShower() {}
+    takeAShower() { }
 }
 
 const RequirementsClass = AddToiletSeat(LivingRoom);
 const AMoreApropriateClass = AddToiletSeat(Shower);
 
-const obj = new RequirementsClass();
-obj.playWithKids();
-obj.iDontWantToKnow();
+(function () {
+    const obj = new RequirementsClass();
+    obj.playWithKids();
+    obj.iDontWantToKnow();
+}());
 
 const aMoreApropriateObject = new AMoreApropriateClass();
 aMoreApropriateObject.takeAShower();
